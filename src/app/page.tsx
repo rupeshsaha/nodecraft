@@ -1,7 +1,7 @@
-import { authClient } from "@/lib/auth-client";
+
 import { requireAuth } from "@/lib/auth-utils";
 import { caller } from "@/trpc/server";
-import React from "react";
+import Logout from "./Logout";
 
 const page = async () => {
   await requireAuth();
@@ -9,7 +9,7 @@ const page = async () => {
   return (
     <div className="min-h-screen min-w-screen flex items-center justify-center">
       {JSON.stringify(data,null,5)}
-      
+      <Logout/>
     
     </div>
   );

@@ -80,7 +80,7 @@ export function RegisterForm() {
         <CardContent>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)}>
-              <div className="gid gap-6">
+              <div className="grid gap-6">
                 <div className="flex flex-col gap-4">
                   <Button
                     variant="outline"
@@ -88,6 +88,7 @@ export function RegisterForm() {
                     type="button"
                     disabled={isPending}
                   >
+                     <Image src={"/logos/github.svg"} width={20} height={20} alt="github"/>
                     Continue with GitHub
                   </Button>
                   <Button
@@ -96,6 +97,7 @@ export function RegisterForm() {
                     type="button"
                     disabled={isPending}
                   >
+                     <Image src={"/logos/google.svg"} width={20} height={20} alt="github"/>
                     Continue with Google
                   </Button>
                 </div>
